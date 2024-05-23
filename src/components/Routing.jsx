@@ -1,13 +1,14 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import NotFound from "./NotFound";
 
-export default function Routing() {
+const Routing = () => {
     return (
-        <>
-            <Routes>
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="*" element={<NotFound />} />
+        </Routes>
     );
-}
+};
+
+export default Routing;
